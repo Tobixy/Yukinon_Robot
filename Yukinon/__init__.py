@@ -1,42 +1,36 @@
 import asyncio
 import time
-from inspect import getfullargspec
+from inspect import getfullargsspec
 from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient
 from pyrogram import Client
 from pyrogram.types import Message
 from Python_ARQ import ARQ
-import asyncio
-from pyrogram import Client
-from config import *
 import pymongo
 import os
 
 from Yukinon.core.git import git
+from config import *
+
 git()
 os.system("git pull")
 
 UPDATES_CHANNEL = "https://t.me/TechZBots"
 SUPPORT_GROUP = "https://t.me/TechZBots_Support"
-
 SUDOERS = SUDO_USERS_ID
 LOG_GROUP_ID = LOG_GROUP_ID
 MOD_LOAD = []
 MOD_NOLOAD = []
 bot_start_time = time.time()
-DB_URI = BASE_DB 
+DB_URI = BASE_DB
 MONGO_URL = MONGO_URL
 OWNER_ID = OWNER_ID
 
-
 myclient = pymongo.MongoClient(DB_URI)
 dbn = myclient["yukinon"]
-
 mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client.yukinon
 
-
-loop = asyncio.get_event_loop()
 aiohttpsession = ClientSession()
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
@@ -61,3 +55,9 @@ async def eor(msg: Message, **kwargs):
     )
     spec = getfullargspec(func.__wrapped__).args
     return await func(**{k: v for k, v in kwargs.items() if k in spec})
+
+# Your code logic goes here
+
+app.stop()
+aiohttpsession.close()
+mongo_client.close()
