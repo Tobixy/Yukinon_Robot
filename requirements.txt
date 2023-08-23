@@ -18,7 +18,7 @@ EmojiCaptcha
 captcha==0.3
 googletrans==4.0.0rc1
 telegraph==1.0.0
-pyrogram==1.8.1
+pyrogram==2.0.106
 pyyaml==6.0
 gitpython==3.1.24
 httpcore==0.14.0
