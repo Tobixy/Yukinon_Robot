@@ -1,4 +1,4 @@
- from dotenv import load_dotenv
+from dotenv import load_dotenv
 from os import environ
 
 load_dotenv("config.env")
@@ -13,4 +13,4 @@ BASE_DB = MONGO_URL
 ARQ_API_URL = environ.get("ARQ_API_URL")
 ARQ_API_KEY = environ.get("ARQ_API_KEY")
 F_SUB_CHANNEL = environ.get("F_SUB_CHANNEL")
-OWNER_ID = int(environ.get("OWNER_ID","1906005317"))
+OWNER_ID = int(environ.get("OWNER_ID", "5715764478"))
