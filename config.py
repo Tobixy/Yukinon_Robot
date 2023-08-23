@@ -8,7 +8,7 @@ API_ID = int(environ.get("API_ID"))
 API_HASH = environ.get("API_HASH")
 SUDO_USERS_ID = environ.get("SUDO_USERS_ID")
 LOG_GROUP_ID = environ.get("LOG_GROUP_ID")
-MONGO_URL = environ.get("mongodb+srv://Shivam10:Shivam10@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority")
+MONGO_URL = environ.get("mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority")
 BASE_DB = MONGO_URL
 ARQ_API_URL = environ.get("ARQ_API_URL")
 ARQ_API_KEY = environ.get("ARQ_API_KEY")
