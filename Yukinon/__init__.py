@@ -1,6 +1,6 @@
 import asyncio
 import time
-from inspect import getfullargsspec
+from inspect import getfullargspec
 from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient
 from pyrogram import Client
