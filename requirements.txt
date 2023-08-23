@@ -22,4 +22,4 @@ pyrogram==2.0.106
 pyyaml==6.0
 gitpython==3.1.24
 httpx
-httpcore>=0.14.0
+httpcore
